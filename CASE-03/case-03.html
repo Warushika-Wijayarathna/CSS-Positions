@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Case 03 - Nested Circle</title>
+    <title>Case 03</title>
+    <link rel="stylesheet" href="../normalize.css">
     <style>
         * {
             margin: 0;
@@ -49,7 +50,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: black;
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            z-index: -1;
         }
 
         #inner-1 {
@@ -58,31 +62,32 @@
 
         #inner-2 {
             top: 990px;
+            background-color: deepskyblue;
         }
 
         #inner-3 {
             top: 1590px;
+            background-color: coral;
         }
 
     </style>
 </head>
 <body>
 
-<div class="circle">
-    <!-- Outer circle remains centered -->
-</div>
+    <div class="circle">
+    </div>
 
-<div id="inner-1" class="inner-circle">
-    <span>Hello</span>
-</div>
+    <div id="inner-1" class="inner-circle">
+        <span>Hello</span>
+    </div>
 
-<div id="inner-2" class="inner-circle">
-    <span>Welcome to</span>
-</div>
+    <div id="inner-2" class="inner-circle">
+        <span>Welcome to</span>
+    </div>
 
-<div id="inner-3" class="inner-circle">
-    <span>Institute of Software Engineering</span>
-</div>
+    <div id="inner-3" class="inner-circle">
+        <span>Institute of Software Engineering</span>
+    </div>
 
 </body>
 </html>
